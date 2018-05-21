@@ -231,10 +231,7 @@
 	@section Header Text
 	*/
 		#templateHeader,#templateHeader p{
-			background-color: #3b097b;
-			display: flex;
-			align-items: center;
-			justify-content: center;
+
 			/*@editable*/color:#606060;
 			/*@editable*/font-family:Helvetica;
 			/*@editable*/font-size:16px;
@@ -524,16 +521,123 @@
 }</style>
 <style>
 /*customized style*/
-.blue-ball {
-	margin-top: 20px;
+
+/* Font */
+
+h1, h2, h3, h4, h5, h6 {
+	color: #434343;
+	font-family: PingFangHK;
+	font-style: normal;
 }
 
+
+/* CONTAINER */
+.templateContainer {
+	background-color: #f7f5fa;
+}
+
+/* HEADER */
+#templateHeader {
+	padding-top: 47px;
+	padding-bottom: 47px;
+	background-image: linear-gradient(to right, #3b097b , #192660);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-title-img {
+	width: 30%;
+}
+
+/* BODY */
+#templateBody {
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: inherit;
+	border-bottom: 0px;
+}
+
+#templateBody p {
+	padding-left: 20px;
+	font-family: PingFangHK;
+	font-size: 14px;
+	color: #434343;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+}
+
+#templateBody a, #templateBody p a{
+	color: #9d50ff;
+	text-decoration: none;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+/* CONTENT */
+
+.blue-ball {
+	margin-top: 20px;
+	height: 168px;
+	width: 168px;
+	margin-left: -30px;
+}
+
+/* FOOTER */
 #templateFooter {
+	background-color: inherit;
 	background-repeat:no-repeat;
 	background-image: url("https://tw.pycon.org/2018/static/pycontw-2018/assets/deco-circle-yellow.svg");
 	background-position: 350px 0px;
 	background-size: auto;
 }
+
+#footerContent p {
+	text-align: left;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-family: PingFangHK;
+	color: #434343;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+}
+
+#footerContent a, #footerContent p a{
+	font-family: PingFangHK;
+	font-size: 14px;
+	color: #9d50ff;
+	text-decoration: none;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+#utilityBar {
+	background: None;
+}
+
+#utilityBar a, #utilityBar p a{
+	font-family: PingFangHK;
+	font-size: 19px;
+	color: #3b097a;
+	text-decoration: none;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
 </style>
 </head>
 
@@ -554,7 +658,7 @@
                             <td valign="top" id="templateHeader">
 
                                 <!-- BEGIN MODULE: HEADER IMAGE // -->
-                                <img src="https://tw.pycon.org/2018/static/pycontw-2018/assets/logo-white.svg" style="max-width:564px;" class="templateImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext>
+                                <img src="https://tw.pycon.org/2018/static/pycontw-2018/assets/logo-white.svg" style="max-width:564px;" class="templateImage header-title-img" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext>
                                 <!-- // END MODULE: HEADER IMAGE -->
 
                             </td>
@@ -565,9 +669,17 @@
                             <td valign="top" id="templateBody">
                                 <!-- BEGIN MODULE: BODY CONTENT // -->
                                 <div mc:edit="body_content">
+																		<!-- BEGIN style blue ball -->
 																		<img class="blue-ball" src="https://tw.pycon.org/2018/static/pycontw-2018/assets/deco-circle-blue.svg"></img>
-                                    <h1>Heading 1</h1>
-                                    <h2>Heading 2</h2>
+																		<!-- END style blue ball -->
+                                    <h4>Hi james，</h4>
+																		<p>台灣 Python 年會將在 6/1 揭開序幕，很高興能在 PyConTW 2018 看到你! 我們特別整理了一些實用資訊，敬請詳細閱讀：</p>
+																		<br>
+																		<h4>交通</h4>
+																		<p>年會場地位於中央研究院人文社會科學館（台北市南港區研究院路二段 128 號），詳細位置可以參考 <a href="http://tw.pycon.org/2018/venue/">PyConTw2018_官方網站</a> 或 <a href="http://gis.sinica.edu.tw/asmap/sinica_campus_map.png">中研院院區圖</a>。</p>
+																		<br>
+																		<h4>報到</h4>
+
                                     <h3>Heading 3</h3>
                                     <h4>Heading 4</h4>
                                     <p><strong>Getting started!</strong><br>To choose your fonts, colors, and styles, click <strong>Edit Design</strong> at the bottom of this screen. After you create a look and feel you love, click inside this box to start adding your own content.</p>
@@ -582,21 +694,25 @@
                         <!-- BEGIN FOOTER // -->
                         <tr>
                             <td valign="top" id="templateFooter">
-
-                                <!-- BEGIN MODULE: STANDARD FOOTER // -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                     <tr>
-                                        <td valign="top" id="footerContent">
-                                            <div mc:edit="footer_content">
-																							<p>PyCon Taiwan 2018</p>
-                                            </div>
-                                        </td>
+                                      <td valign="top" id="footerContent">
+																				<div mc:edit="footer_content">
+																					<p>最後，也請您務必閱讀並一同遵守 <a href="https://tw.pycon.org/2018/about/code-of-conduct/">PyCon Taiwan 行為準則</a>，讓大家都能開心的在 PyCon 齊聚一堂，彼此激盪、傳承、啟發。</p>
+                                        </div>
+                                      </td>
                                     </tr>
+																		<tr>
+																			<td valign="top" id="utilityBar">
+																				<div mc:edit="utility_bar">
+																					<p><a href="http://tw.pycon.org/2018/">PyCon Taiwan 2018</a></p>
+																				</div>
+																			</td>
+																		</tr>
                                 </table>
-                                <!-- // BEGIN MODULE: STANDARD FOOTER -->
-
                             </td>
                         </tr>
+
                         <!-- // END FOOTER -->
                     </table>
                     <!--[if gte mso 9]>
@@ -610,6 +726,5 @@
         </table>
     </center>
 </body>
-
 </html>
 
