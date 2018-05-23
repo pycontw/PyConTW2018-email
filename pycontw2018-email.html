@@ -519,140 +519,148 @@
 		}
 
 }</style>
-<style>
-/*customized style*/
+	<style>
+		/*customized style*/
 
-/* Font */
+		/* Font */
+		h1, h2, h3, h4, h5, h6 {
+			color: #434343;
+			font-family: PingFangHK;
+			margin-bottom: 25px;
+			margin-top: 25px;
+		}
 
-h1, h2, h3, h4, h5, h6 {
-	color: #434343;
-	font-family: PingFangHK;
-}
+		h4 {
+			font-size: 18px;
+			margin-left: 43%;
+		}
 
-h4 {
-	font-size: 16px;
-}
+		/* BODY */
+		#bodyCell {
+			padding: 0px;
+		}
+		/* CONTAINER */
+		.templateContainer {
+			background-color: #f7f5fa;
+		}
+
+		/* HEADER */
+		#templateHeader {
+			background-image: url("https://gallery.mailchimp.com/8034f73f7fe4820f8f925e046/images/c57d190d-6424-4636-afe4-a8261765523b.png");
+			padding: 0px 0px;
+			background-repeat: no-repeat;
+		    background-position: center;
+		    width: 100%;
+		    height: 29vw;
+		}
+
+		.header-title-img {
+			display: none;
+		}
+
+		/* BODY */
+		#templateBody {
+			max-width: 600px;
+			background-color: inherit;
+			border-bottom: 0px;
+		}
 
 
-/* BODY */
-#bodyCell {
-	padding: 0px;
-}
-/* CONTAINER */
-.templateContainer {
-	background-color: #f7f5fa;
-}
+		#templateBody p {
+			font-family: PingFangHK;
+			font-size: 14px;
+			color: #434343;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+		}
 
-/* HEADER */
-#templateHeader {
-	background-image: url("https://gallery.mailchimp.com/8034f73f7fe4820f8f925e046/images/c57d190d-6424-4636-afe4-a8261765523b.png");
-	padding: 0px 0px;
-	background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 29vw;
-}
+		#templateBody a, #templateBody p a{
+			color: #9d50ff;
+			text-decoration: none;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+		}
 
-/*@media only screen and (max-width: 480px){
-	#templateHeader{
-		height: 180px;
-	}
+		/* CONTENT */
 
-}*/
+		.templateBodyContent {
+			max-width: 600px;
+			margin: 0 auto;
+		}
 
-.header-title-img {
-	display: none;
-}
+		.hi {
+			margin-top: 50px;
+			margin-bottom: 25px;
+		}
 
-/* BODY */
-#templateBody {
-	padding-left: 40px;
-	padding-right: 40px;
-	background-color: inherit;
-	border-bottom: 0px;
-}
+		.mb-50 {
+			margin-bottom: 50px;
+		}
 
-#templateBody p {
-	padding-left: 20px;
-	font-family: PingFangHK;
-	font-size: 14px;
-	color: #434343;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-}
+		.mt-25 {
+			margin-top: 25px;
+		}
 
-#templateBody a, #templateBody p a{
-	color: #9d50ff;
-	text-decoration: none;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: normal;
-}
+		.mb-25 {
+			margin-bottom: 25px;
+		}
 
-/* CONTENT */
+		/* FOOTER */
+		#templateFooter {
+			background-color: inherit;
+			background-repeat:no-repeat;
+			background-image: url("https://tw.pycon.org/2018/static/pycontw-2018/assets/deco-circle-yellow.svg");
+			background-position: 350px 40px;
+			background-size: auto;
+		}
 
-.blue-ball {
-	margin-top: 20px;
-	height: 168px;
-	width: 168px;
-	margin-left: -30px;
-}
+		#footerContent p {
+			text-align: left;
+			padding-left: 40px;
+			padding-right: 40px;
+			font-family: PingFangHK;
+			color: #434343;
+			font-size: 14px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+		}
 
-/* FOOTER */
-#templateFooter {
-	background-color: inherit;
-	background-repeat:no-repeat;
-	background-image: url("https://tw.pycon.org/2018/static/pycontw-2018/assets/deco-circle-yellow.svg");
-	background-position: 350px 40px;
-	background-size: auto;
-}
+		#footerContent a, #footerContent p a{
+			font-family: PingFangHK;
+			font-size: 14px;
+			color: #9d50ff;
+			text-decoration: none;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+		}
 
-#footerContent p {
-	text-align: left;
-	padding-left: 40px;
-	padding-right: 40px;
-	font-family: PingFangHK;
-	color: #434343;
-	font-size: 14px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-}
+		#utilityBar {
+			background: None;
+		}
 
-#footerContent a, #footerContent p a{
-	font-family: PingFangHK;
-	font-size: 14px;
-	color: #9d50ff;
-	text-decoration: none;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: normal;
-}
+		#utilityBar a, #utilityBar p a{
+			font-family: PingFangHK;
+			font-size: 19px;
+			color: #3b097a;
+			text-decoration: none;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+		}
 
-#utilityBar {
-	background: None;
-}
-
-#utilityBar a, #utilityBar p a{
-	font-family: PingFangHK;
-	font-size: 19px;
-	color: #3b097a;
-	text-decoration: none;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: normal;
-}
-
-</style>
+	</style>
 </head>
 
 <body>
@@ -682,13 +690,10 @@ h4 {
                         <tr>
                             <td valign="top" id="templateBody">
                                 <!-- BEGIN MODULE: BODY CONTENT // -->
-                                <div mc:edit="body_content">
-																		<!-- BEGIN style blue ball -->
-																		<img class="blue-ball" src="https://tw.pycon.org/2018/static/pycontw-2018/assets/deco-circle-blue.svg"></img>
-																		<!-- END style blue ball -->
+                                <div class="templateBodyContent" mc:edit="body_content">
 
 																		<!-- BEGIN CONTENT Intro-->
-                                    <h4>Hi james，</h4>
+                                    <p class="hi">Hi james，</p>
 																		<p>台灣 Python 年會將在 6/1 揭開序幕，很高興能在 PyConTW 2018 看到你! 我們特別整理了一些實用資訊，敬請詳細閱讀：</p>
 																		<!-- END CONTENT Intro-->
 																		<br>
@@ -701,7 +706,7 @@ h4 {
 																		<h4>報到</h4>
 																		<p>6/1 開始報到時間是 08:10，在到達會場後，連上年會現場的 WiFi，即可於「PyConTW Pass」App 按下報到按鈕，完成報到。</p>
 																		<p>請透過以下專屬連結下載、啟動 PyConTW Pass：</p>
-																		<p><a>您的專屬連結</a></p>
+																		<p class="mb-25 mt-25"><a>您的專屬連結</a></p>
 																		<p>三樓以及四樓兩側皆有提供迎賓袋領取攤位，請依照人潮狀況選擇領取攤位領取。
 請注意：迎賓袋內有您的識別證，必須領取並且配戴後才能進入會議廳內</p>
 																		<p>若您「無法按下 App 的報到按鈕」或「無法成功安裝『PyConTW Pass』」，請向各樓層領取攤位的志工出示 KKTIX QR Code 進行報到並同時領取迎賓袋。</p>
