@@ -89,7 +89,7 @@
 			max-width:564px;
 		}
 		.templateContainer{
-			max-width:600px !important;
+			/*max-width:600px !important;*/
 		}
 		#templatePreheader{
 			padding-right:9px;
@@ -534,6 +534,10 @@ h4 {
 }
 
 
+/* BODY */
+#bodyCell {
+	padding: 0px;
+}
 /* CONTAINER */
 .templateContainer {
 	background-color: #f7f5fa;
@@ -541,16 +545,23 @@ h4 {
 
 /* HEADER */
 #templateHeader {
-	padding-top: 47px;
-	padding-bottom: 47px;
-	background-image: linear-gradient(to right, #3b097b , #192660);
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	background-image: url("https://gallery.mailchimp.com/8034f73f7fe4820f8f925e046/images/c57d190d-6424-4636-afe4-a8261765523b.png");
+	padding: 0px 0px;
+	background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 29vw;
 }
 
+/*@media only screen and (max-width: 480px){
+	#templateHeader{
+		height: 180px;
+	}
+
+}*/
+
 .header-title-img {
-	width: 30%;
+	display: none;
 }
 
 /* BODY */
@@ -661,7 +672,7 @@ h4 {
                             <td valign="top" id="templateHeader">
 
                                 <!-- BEGIN MODULE: HEADER IMAGE // -->
-                                <img src="https://tw.pycon.org/2018/static/pycontw-2018/assets/logo-white.svg" style="max-width:564px;" class="templateImage header-title-img" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext>
+                                <img src="https://gallery.mailchimp.com/8034f73f7fe4820f8f925e046/images/4fc64405-0b77-4bfc-ac09-5ebfcd414123.png" style="max-width:564px;" class="templateImage header-title-img" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext>
                                 <!-- // END MODULE: HEADER IMAGE -->
 
                             </td>
