@@ -527,12 +527,21 @@
 			color: #434343;
 			font-family: PingFangHK;
 			margin-bottom: 25px;
-			margin-top: 25px;
+			margin-top: 50px;
 		}
 
 		h4 {
 			font-size: 18px;
-			margin-left: 43%;
+			text-align: center;
+		}
+
+		p {
+			margin-top: 25px;
+			margin-bottom: 0px;
+		}
+
+		li {
+			margin-top: 25px;
 		}
 
 		/* BODY */
@@ -593,6 +602,16 @@
 			margin: 0 auto;
 		}
 
+		#templateBodyContent ul li {
+			margin-bottom: 25px;
+		}
+
+		.flex-align-title {
+			background-color: red;
+			text-align: center;
+			width: 100%;
+		}
+
 		.hi {
 			margin-top: 50px;
 			margin-bottom: 25px;
@@ -610,38 +629,16 @@
 			margin-bottom: 25px;
 		}
 
+		.final-text {
+			margin-top: 34px;
+			margin-bottom: 50px;
+		}
+
 		/* FOOTER */
 		#templateFooter {
-			background-color: inherit;
-			background-repeat:no-repeat;
-			background-image: url("https://tw.pycon.org/2018/static/pycontw-2018/assets/deco-circle-yellow.svg");
-			background-position: 350px 40px;
-			background-size: auto;
-		}
-
-		#footerContent p {
-			text-align: left;
-			padding-left: 40px;
-			padding-right: 40px;
-			font-family: PingFangHK;
-			color: #434343;
-			font-size: 14px;
-			font-weight: normal;
-			font-style: normal;
-			font-stretch: normal;
-			line-height: normal;
-		}
-
-		#footerContent a, #footerContent p a{
-			font-family: PingFangHK;
-			font-size: 14px;
-			color: #9d50ff;
-			text-decoration: none;
-			font-weight: normal;
-			font-style: normal;
-			font-stretch: normal;
-			line-height: normal;
-			letter-spacing: normal;
+			background-image: linear-gradient(to right, #3b097b , #192660);
+			padding: 0px 0px;
+			height: 74px;
 		}
 
 		#utilityBar {
@@ -649,15 +646,11 @@
 		}
 
 		#utilityBar a, #utilityBar p a{
-			font-family: PingFangHK;
-			font-size: 19px;
-			color: #3b097a;
+			font-family: 'MicrosoftJhengHei';
+			font-size: 16px;
+			color: #ffffff;
 			text-decoration: none;
-			font-weight: normal;
-			font-style: normal;
-			font-stretch: normal;
-			line-height: normal;
-			letter-spacing: normal;
+			line-height: 1.5;
 		}
 
 	</style>
@@ -693,40 +686,128 @@
                                 <div class="templateBodyContent" mc:edit="body_content">
 
 																		<!-- BEGIN CONTENT Intro-->
-                                    <p class="hi">Hi james，</p>
+                                    <p class="hi">Hi *|NICKNAME|*，</p>
 																		<p>台灣 Python 年會將在 6/1 揭開序幕，很高興能在 PyConTW 2018 看到你! 我們特別整理了一些實用資訊，敬請詳細閱讀：</p>
 																		<!-- END CONTENT Intro-->
-																		<br>
-																		<!-- BEGIN CONTENT Traffic-->
+
+																		<!-- BEGIN CONTENT Transportation-->
 																		<h4>交通</h4>
 																		<p>年會場地位於中央研究院人文社會科學館（台北市南港區研究院路二段 128 號），詳細位置可以參考 <a href="http://tw.pycon.org/2018/venue/">PyConTw2018_官方網站</a> 或 <a href="http://gis.sinica.edu.tw/asmap/sinica_campus_map.png">中研院院區圖</a>。</p>
-																		<!-- END CONTENT Traffic-->
-																		<br>
+																		<!-- END CONTENT Transportation-->
+
+																		<!-- BEGIN CONTENT Shuttle Bus-->
+																		<h4>交通車</h4>
+																		<p>會議當天早上 8:00 到 8:50 之間提供交通車到達會場，請在<a href="https://web.metro.taipei/c/googlemap.asp?Longitude=121.616936&Latitude=25.055847">捷運南港展覽館站一號出口</a>前到巴士站搭車。</p>
+																		<!-- END CONTENT Shuttle Bus-->
+
 																		<!-- BEGIN CONTENT CheckIn-->
 																		<h4>報到</h4>
 																		<p>6/1 開始報到時間是 08:10，在到達會場後，連上年會現場的 WiFi，即可於「PyConTW Pass」App 按下報到按鈕，完成報到。</p>
 																		<p>請透過以下專屬連結下載、啟動 PyConTW Pass：</p>
-																		<p class="mb-25 mt-25"><a>您的專屬連結</a></p>
+																		<p class="mb-25 mt-25"><a href="https://s6bhm.app.goo.gl/?link=https%3A%2F%2Fccip.pycon.tw%2F%3Ftoken%3D*|QRCODE|*&apn=org.pycontw.ccip&amv=24&isi=1387312806&ibi=org.pycontw.CCIP-iOS">您的專屬連結</a></p>
 																		<p>三樓以及四樓兩側皆有提供迎賓袋領取攤位，請依照人潮狀況選擇領取攤位領取。
 請注意：迎賓袋內有您的識別證，必須領取並且配戴後才能進入會議廳內</p>
 																		<p>若您「無法按下 App 的報到按鈕」或「無法成功安裝『PyConTW Pass』」，請向各樓層領取攤位的志工出示 KKTIX QR Code 進行報到並同時領取迎賓袋。</p>
 																		<!-- END CONTENT CheckIn-->
-																		<br>
+
 																		<!-- BEGIN CONTENT Events-->
 																		<h4>活動</h4>
-																		<ol>
-																			<li>議程</li>
+																		<ul>
+																			<li>大會議程</li>
 																			<p><a href="https://tw.pycon.org/2018/events/schedule/">議程連結</a></p>
-																			<li>紀念品販售</li>
-																			<p>紀念品販售內文</p>
 																			<li>Lighting Talk</li>
-																			<p>Lighting Talk內文</p>
+																			<p></p>
 																			<li>Open Space</li>
-																			<p>Open Space內文</p>
+																			<p></p>
 																			<li>大地遊戲</li>
-																			<p>大地遊戲：集點抽書。持 App 至各攤位提供您的 QR code，經攤位主認證掃描後，即視為完成戳章集點。蒐集各攤位認證戳章後可獲得 Day 2 Lighting Talk 時抽獎贈書資格，共有 Effective Python 等十本好書等著送給您！</p>
-																		</ol>
+																			<p>集點抽書。持 App 至各攤位提供您的 QR code，經攤位主認證掃描後，即視為完成戳章集點。蒐集各攤位認證戳章後可獲得 Day 2 Lighting Talk 時抽獎贈書資格，共有 Effective Python 等十本好書等著送給您！</p>
+																		</ul>
 																		<!-- END CONTENT Events-->
+																		<!-- BEGIN CONTENT On-Line Forum-->
+																		<h4>議程線上討論區</h4>
+																		<p>使用 <a href="http://t.me/pycontw2018">Telegram: PyCon TW 2018</a></p>
+																		<!-- END CONTENT On-Line Forum-->
+																		<!-- BEGIN CONTENT Food-->
+																		<h4>食物</h4>
+																		<p>會議兩天提供早茶，中餐，點心，歡迎大家盡情享用。</p>
+																		<!-- END CONTENT Food-->
+																		<!-- BEGIN CONTENT WIFI-->
+																		<h4>網路</h4>
+																		<p>會議當天的 SSID, Password 如下:</p>
+																		<p>SSID:</p>
+																		<p>PyCon2018 (5G)</p>
+																		<p>PyCon2018_2G</p>
+																		<p>密碼</p>
+																		<p>12345678</p>
+																		<!-- END CONTENT WIFI-->
+																		<!-- BEGIN CONTENT Notice-->
+																		<h4>其他注意事項</h4>
+																		<p>購買企業票的朋友，我們將在活動結束之後開立有公司抬頭和統編的電子發票，並寄送至您的 email 信箱。如果對發票有疑問，請來信 rockhung@ocf.tw。</p>
+
+																		<p class="final-text"><strong>最後，也請您務必閱讀並一同遵守 <a href="https://tw.pycon.org/2018/about/code-of-conduct/">PyCon Taiwan 行為準則</a>，讓大家都能開心的在 PyCon 齊聚一堂，彼此激盪、傳承、啟發。</stong></p>
+																		<!-- END CONTENT Notice-->
+
+																		<!-- BEGIN CONTENT Intro-->
+                                    <p class="hi">Hi *|NICKNAME|*</p>
+																		<p>PyCon Taiwan 2018 starts on June 1 which is around the corner, and we’re really excited to see you at the conference! We’ve prepared some useful information as the following, please take time and read them carefully:</p>
+																		<!-- END CONTENT Intro-->
+
+																		<!-- BEGIN CONTENT Transportation-->
+																		<h4>Transportation</h4>
+																		<p>The conference venue is located at Humanities and Social Sciences Building, Academia Sinica (128 Academia Road, Section 2, Nankang, Taipei). Please visit <a href="http://tw.pycon.org/2018/venue/">PyCon TW 2018’s official website</a> or <a href="http://gis.sinica.edu.tw/asmap/sinica_campus_map.png">campus map of Academia Sinica</a> for detailed information about the location</p>
+																		<!-- END CONTENT Transportation-->
+
+																		<!-- BEGIN CONTENT Shuttle Bus-->
+																		<h4>Shuttle Bus</h4>
+																		<p>lo take the conference shuttle bus, please meet at the bus station in front of<a href="https://web.metro.taipei/c/googlemap.asp?Longitude=121.616936&Latitude=25.055847">Exit 1 of MRT Taipei Nangang Exhibition Center Station </a>between 8:00 and 8:50.</p>
+																		<!-- END CONTENT Shuttle Bus-->
+
+																		<!-- BEGIN CONTENT CheckIn-->
+																		<h4>Registration</h4>
+																		<p>The starting time of the registration on June 1 will be 08:10. After arriving the conference venue, please connect to the conference WiFi in order to successfully register through pressing the registration button in “PyCon TW Pass” app.</p>
+																		<p>Please download PyCon TW Pass through the following personalised link, and open it:</p>
+																		<p class="mb-25 mt-25"><a href="https://s6bhm.app.goo.gl/?link=https%3A%2F%2Fccip.pycon.tw%2F%3Ftoken%3D*|QRCODE|*&apn=org.pycontw.ccip&amv=24&isi=1387312806&ibi=org.pycontw.CCIP-iOS">Your personalised link</a></p>
+																		<p>Booths providing goodie bags for attendees are located at both side aisles on both 3rd floor and 4th floor, please visit the booths that are less crowded.</p>
+																		<p>Notice, your identification badge is provided inside goodie bag, you’ll have to pick-up and wear your badge in order to enter the conference rooms.</p>
+																		<p>If the registration button in PyCon TW Pass is not functioning, or if you failed to successfully install PyCon TW Pass, please show your KKTIX registration QR Code to the staffs at the goodie bags booths at either floor, that way you’ll be able to register and pick-up your goodie bag at the same time.</p>
+																		<!-- END CONTENT CheckIn-->
+
+																		<!-- BEGIN CONTENT Events-->
+																		<h4>Events</h4>
+																		<ul>
+																			<li>Schedule</li>
+																			<p><a href="https://tw.pycon.org/2018/events/schedule/">Schedule link</a></p>
+																			<li>Lighting Talk</li>
+																			<p></p>
+																			<li>Open Space</li>
+																			<p></p>
+																			<li>大地遊戲</li>
+																			<p>集點抽書。持 App 至各攤位提供您的 QR code，經攤位主認證掃描後，即視為完成戳章集點。蒐集各攤位認證戳章後可獲得 Day 2 Lighting Talk 時抽獎贈書資格，共有 Effective Python 等十本好書等著送給您！</p>
+																		</ul>
+																		<!-- END CONTENT Events-->
+																		<!-- BEGIN CONTENT On-Line Forum-->
+																		<h4>Online forum</h4>
+																		<p>Use <a href="http://t.me/pycontw2018">Telegram: PyCon TW 2018</a></p>
+																		<!-- END CONTENT On-Line Forum-->
+																		<!-- BEGIN CONTENT Food-->
+																		<h4>Food</h4>
+																		<p>There will be dessert in the morning and afternoon. </p>
+																		<!-- END CONTENT Food-->
+																		<!-- BEGIN CONTENT WIFI-->
+																		<h4>Internet</h4>
+																		<p>Use the following SSID and Password to connect to internet</p>
+																		<p>SSID:</p>
+																		<p>PyCon2018 (5G)</p>
+																		<p>PyCon2018_2G</p>
+																		<p>Password</p>
+																		<p>12345678</p>
+																		<!-- END CONTENT WIFI-->
+																		<!-- BEGIN CONTENT Notice-->
+																		<h4>Notice</h4>
+																		<p>We will send electronic invoices with company names and uniform numbers directly to your email address after the event. Please feel free to contact rockhung@ocf.tw if there’s any questions.</p>
+
+																		<p class="final-text"><strong>Finally, please read our <a href="https://tw.pycon.org/2018/about/code-of-conduct/">Code of Conduct</a> and comply with it. Let us enjoy the cherish moment at PyConTW 2018, share and inspire each other!</stong></p>
+																		<!-- END CONTENT Notice-->
                                 </div>
                                 <!-- // END MODULE: BODY CONTENT -->
                             </td>
@@ -736,13 +817,6 @@
                         <tr>
                             <td valign="top" id="templateFooter">
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tr>
-                                      <td valign="top" id="footerContent">
-																				<div mc:edit="footer_content">
-																					<p><strong>最後，也請您務必閱讀並一同遵守 <a href="https://tw.pycon.org/2018/about/code-of-conduct/">PyCon Taiwan 行為準則</a>，讓大家都能開心的在 PyCon 齊聚一堂，彼此激盪、傳承、啟發。</stong></p>
-                                        </div>
-                                      </td>
-                                    </tr>
 																		<tr>
 																			<td valign="top" id="utilityBar">
 																				<div mc:edit="utility_bar">
