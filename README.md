@@ -1,3 +1,3 @@
-Email template use for PyConTW2018
+## PyConTW2018 Email Template
 
 - use `mailchimp`
